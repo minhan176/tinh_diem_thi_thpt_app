@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ketqua">
+
+    <TableRow
+        android:id="@+id/luuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diemdh">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="  Lưu ý:"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm các khối đại học trên là tổng của 3 môn, chưa cộng với điểm ưu tiên khu vực, đối tượng ưu tiên"
+            android:textColor="#000"
+            android:textSize="16dp" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/tn2"
+        android:layout_width="329dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/diemdh2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="329dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="209dp"
+                android:layout_height="match_parent"
+                android:gravity="top|end"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/ketquatn2"
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:textColor="#FF0000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:gravity="start|top"
+                android:textColor="#000"
+                android:textSize="22sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="329dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chucmung2"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:textColor="#FF0000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/dau2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tn"
+        android:layout_width="329dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/diemdh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/diemtn"
+            android:layout_width="329dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="209dp"
+                android:layout_height="match_parent"
+                android:gravity="top|end"
+                android:text="Điểm tốt nghiệp ="
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/ketquatn"
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/trennam"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:gravity="start|top"
+                android:text="> 5"
+                android:textColor="#000"
+                android:textSize="22dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chucmung"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chúc mừng !"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/dau"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:text="Bạn đã đậu tốt"
+                android:textColor="#000"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/nghiep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="nghiệp"
+            android:textColor="#000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/diemdh"
+        android:layout_width="275dp"
+        android:layout_height="360dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tn"
+        app:layout_constraintBottom_toTopOf="@+id/luuy">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="54dp"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="TỔ HỢP"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="ĐIỂM"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Khối A00"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/kq1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Khối A01"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/kq2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Khối B00"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/kq3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Khối C01"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/kq4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Khối D01"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/kq5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Khối D07"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/kq6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Khối B08"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/kq7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/diemdh2"
+        android:layout_width="275dp"
+        android:layout_height="360dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tn2"
+        app:layout_constraintBottom_toTopOf="@+id/luuy">
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
